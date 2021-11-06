@@ -8,7 +8,7 @@ class Driver{
         ArrayProblem arrayProblem = new ArrayProblem();
 
         int arr[] = {1, 5, 7, 1};
-
+        System.out.println("hello");
         arrayProblem.getPairsCount(arr, 4,6 );
     }
 }
