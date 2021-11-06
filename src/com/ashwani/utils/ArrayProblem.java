@@ -2,8 +2,8 @@ package com.ashwani.utils;
 
 public class ArrayProblem {
     public void print(int arr[]){
-        for(int i=0;i<= arr.length; i++){
-            System.out.println(arr[i]);
+        for(int i=0;i< arr.length; i++){
+            System.out.print(arr[i] + " ");
         }
 
     }
@@ -21,14 +21,24 @@ public class ArrayProblem {
     }
 
     public void kthElement(int arr[]){
-        int newArray[]= new int[arr.length];
-        for(int i=0; i<arr.length;i++){
-            for(int j=0; j < i; j++){
-                if(arr[j]<arr[j+1]){
-                    newArray[i]=arr[j];
+        print(arr);
+        System.out.println("");
+        int n = arr.length;
+        int i, j, temp;
+        int newArr[] = new int[arr.length];
+        for (i = 0; i < n; i++)
+        {
+            for (j = i+1; j < n; j++)
+            {
+                if (arr[j] < arr[i])
+                {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
                 }
             }
         }
-        print(newArray);
+        print(newArr);
     }
+
 }
