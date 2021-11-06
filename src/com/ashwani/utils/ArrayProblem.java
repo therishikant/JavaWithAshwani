@@ -19,4 +19,16 @@ public class ArrayProblem {
         print(newArr);
 
     }
+
+    public void kthElement(int arr[]){
+        int newArray[]= new int[arr.length];
+        for(int i=0; i<arr.length;i++){
+            for(int j=0; j < i; j++){
+                if(arr[j]<arr[j+1]){
+                    newArray[i]=arr[j];
+                }
+            }
+        }
+        print(newArray);
+    }
 }
