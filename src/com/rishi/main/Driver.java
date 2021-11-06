@@ -7,8 +7,8 @@ class Driver{
 
         ArrayProblem arrayProblem = new ArrayProblem();
 
-        int arr[] = {1,2,3,4,0,6,7,8,55};
+        int arr[] = {1, 5, 7, 1};
 
-        System.out.println(arrayProblem.getMinMaxElement(arr));
+        arrayProblem.getPairsCount(arr, 4,6 );
     }
 }
