@@ -1,15 +1,11 @@
 package com.ashwani.main;
 
+import com.ashwani.utils.ArrayProblem;
+
 class Driver{
     public static void main(String[] args) {
-        System.out.println("Hello ashwani");
-        System.out.println(add(5));
-    }
-
-    public static int add(int n){
-        int a=10;
-        int b=20;
-        return a+b;
-
+        ArrayProblem arrayProblem = new ArrayProblem();
+        int arr[]={1,2,3,4,5,6,7,8,9};
+        arrayProblem.reverseArray(arr);
     }
 }
