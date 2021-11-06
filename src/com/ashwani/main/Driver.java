@@ -3,8 +3,7 @@ package com.ashwani.main;
 class Driver{
     public static void main(String[] args) {
         System.out.println("Hello ashwani");
-        int n= add(5);
-        System.out.println(n);
+        System.out.println(add(5));
     }
 
     public static int add(int n){
