@@ -1,5 +1,7 @@
 package com.ashwani.utils;
 
+import java.util.Scanner;
+
 public class ArrayProblem {
     public void print(int arr[]){
         for(int i=0;i< arr.length; i++){
@@ -21,11 +23,14 @@ public class ArrayProblem {
     }
 
     public void kthElement(int arr[]){
+        System.out.print("this is your intial array: ");
         print(arr);
         System.out.println("");
         int n = arr.length;
         int i, j, temp;
-        int newArr[] = new int[arr.length];
+        System.out.print("enter the index value :");
+        Scanner sc= new Scanner(System.in);
+        int m=sc.nextInt();
         for (i = 0; i < n; i++)
         {
             for (j = i+1; j < n; j++)
@@ -38,7 +43,9 @@ public class ArrayProblem {
                 }
             }
         }
-        print(newArr);
+        print(arr);
+        System.out.println(" ");
+        System.out.print("your value is "+ arr[m-1]+" at index value "+ m );
     }
 
 }
