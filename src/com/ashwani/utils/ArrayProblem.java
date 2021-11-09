@@ -79,4 +79,18 @@ public class ArrayProblem {
         }
         print(arr);
     }
+
+    public void subarraySum(int arr[]){
+        System.out.println("enter the value :");
+        Scanner sc= new Scanner(System.in);
+        int m= sc.nextInt();
+        int sum=0;
+        for(int i=0;i<arr.length;i++){
+            sum = sum+arr[i];
+            if(sum==m){
+                System.out.println(i);
+            }
+        }
+
+    }
 }

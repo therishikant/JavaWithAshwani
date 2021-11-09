@@ -8,6 +8,6 @@ class Driver{
         ArrayProblem arrayProblem = new ArrayProblem();
         int arr[]={1,2,1,3,0,0,0,1,3,9,0,8,5,7,5,7};
 
-        arrayProblem.sort012(arr);
+        arrayProblem.subarraySum(arr);
     }
 }
