@@ -48,4 +48,19 @@ public class ArrayProblem {
         System.out.print("your value is "+ arr[m-1]+" at index value "+ m );
     }
 
+    public void findFrequency(int arr[]){
+        int count =0;
+        System.out.print("enter the Number to find it's Frequency: ");
+        Scanner sc=new Scanner(System.in);
+        int m = sc.nextInt();
+        for (int i=0; i<arr.length;i++){
+            if(arr[i]==m){
+                count++;
+            }
+        }
+        print(arr);
+        System.out.println(" ");
+        System.out.println("Frequency of "+m+" is "+count);
+        
+    }
 }
