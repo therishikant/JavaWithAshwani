@@ -81,16 +81,21 @@ public class ArrayProblem {
     }
 
     public void subarraySum(int arr[]){
-        System.out.println("enter the value :");
+        System.out.print("enter a sum value :");
         Scanner sc= new Scanner(System.in);
         int m= sc.nextInt();
         int sum=0;
         for(int i=0;i<arr.length;i++){
-            sum = sum+arr[i];
-            if(sum==m){
-                System.out.println(i);
+            for(int j=i;j<arr.length;j++){
+                sum = sum+arr[j];
+                if(sum==m){
+                    System.out.println(j);
+                    break;
+                }
+                else{
+                    System.out.println("please input valid sum.");
+                }
             }
         }
-
     }
 }
